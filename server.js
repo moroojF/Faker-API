@@ -2,7 +2,7 @@ const User = require('./User');
 const Company = require('./Company');
 
 const express = require("express");
-const { company } = require('faker');
+
 const port = 8000;
 const app = express();
 
