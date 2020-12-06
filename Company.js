@@ -2,8 +2,8 @@ const faker = require('faker');
 class Company {
     constructor() {
         this._id = faker.random.uuid();
-        this.name = faker.company.name();
-        this.address=[];
+        this.name = faker.company.companyName();
+        this.address = {};
         this.address["street"] = faker.address.streetName();
         this.address["city"] = faker.address.city();
         this.address["state"] = faker.address.state();
@@ -11,3 +11,5 @@ class Company {
         this.address["country"] = faker.address.country();
     }
 }
+
+module.exports = Company;
